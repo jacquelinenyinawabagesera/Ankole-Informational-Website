@@ -1,0 +1,110 @@
+.images{
+    width: 100%;
+    height: 99vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    opacity: 0;
+    animation: slideAnimation 25s infinite forwards;
+}
+
+.images:nth-child(1){
+    background-image: url(./images/image1.jpg);
+    animation-delay: 0s;
+}
+.images:nth-child(2){
+    background-image: url(./images/image2.jpeg);
+    animation-delay: 5s;
+    
+}
+.images:nth-child(3){
+    background-image: url(./images/image3.jpg);
+    animation-delay: 10s;
+
+}
+.images:nth-child(4){
+    background-image: url(./images/image4.jpg);
+    animation-delay: 15s;
+
+}
+.images:nth-child(5){
+    background-image: url(./images/image5.jpg);
+    animation-delay: 20s;
+    
+}
+
+@keyframes slideAnimation{
+  0%{opacity:0;}  
+  10%{opacity:1;}
+  30%{opacity:1;}
+  40%{opacity:0;}
+  100%{opacity:0;}
+}
+
+.heading-container{
+    position: absolute;
+    top: 30vh;
+    left: 70vh;
+}
+.heading-container h2{
+    font-size: 12vh;
+    color: rgb(128, 123, 123);
+}
+.ankole-logo{
+    top: 10vh;
+    left: 85vh;
+    width: 20vh;
+    position: absolute;
+}
+.navigation-bar{
+    position: absolute;top: 85vh;left: 60vh;display: flex;gap: 2vh;background-color: rgb(9,10,10);padding: 3vh;border-radius: 5vh;
+}
+.navigation-bar a{
+  text-decoration: none;
+  color: white;
+  font-size: 2.1vh;
+  font-weight: bold;
+}
+.reservations-container{
+    background-color: rgb(115,115,115);padding: 1.5vh;border-radius: 5vh;margin-top:-0.9vh;
+}
+.reservations-container:hover{
+    background-color: white;
+    color: black;
+}
+.reservations-container a:hover{
+    color: black;
+}
+#home{
+    background-color: rgb(39, 38, 38);padding: 1.2vh;margin-top: -0.9vh;
+}
+#home:hover{
+    background-color: rgb(9,10,10);
+}
+.navigation-icons svg{
+    color: rgb(58, 54, 54);
+    font-size: 20vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px)and (max-width:1350px){
+    .navigation-bar{
+        margin-left: -58vh;
+    }
+    .ankole-logo{
+        margin-left: -53vh;
+    }
+    .heading-container{
+        margin-left: -53vh;
+        position: fixed;
+    }
+}
