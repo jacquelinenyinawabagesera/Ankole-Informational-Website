@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
 <style>
 .div-class {
-  background-image: url("images/image6.jpg");
+  background-image: url("image7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 98vh; 
@@ -26,7 +33,69 @@ color: rgb(179,66,21);
 }
 .form-container{
     background-color:rgb(5,5,5);
-    width: 500px;
+    height: 98vh; 
+  width: 90vh;
+  margin-top: 100vh;
+  margin-left: 100vh;
+  margin-top: -62vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+input{
+    display: block;
+    width: 75vh;
+    padding: 1.5vh;
+    background-color: black;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+}
+input:hover{
+    border:1px solid rgb(52, 255, 52);
+}
+label{
+    color: white;
+}
+button{
+    background-color: rgb(242,213,165);
+    color: black;
+    width: 78vh;
+    padding: 2.3vh;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(236, 196, 130);
+    color: white;
+}
+select{
+    display: block;
+    width: 78vh;
+    padding: 1.5vh;
+    background-color: black;
+    color: gray;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+select:hover{
+    border:1px solid rgb(52, 255, 52);
+}
+input[type="date"]{
+    color: rgb(173, 171, 171);
+    /* background-color: black; */
+}
+input[type="date"]::placeholder{
+    color:white;
+    opacity: 1;
+}
+input[type="time"]{
+    color: white;
+    /* background-color: rgb(63, 61, 61); */
+}
+input[type="time"]::placeholder{
+    color:white;
+    opacity: 1;
 }
 </style>
 </head>
@@ -38,11 +107,55 @@ color: rgb(179,66,21);
         <h2 class="karibu-heading">Karibu</h2>
         <h2 class="reservations-heading">Reservation</h2>
     </div>
-    <form action="submit" >
-        <div class="form-container">
-
-        </div>
-    </form>
+   <div class="form-container">
+    <div style="margin-top: 10vh;">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="" id="name" placeholder="Enter your first name" required>
+    </div>
+    <div>
+        <label for="location">Location</label>
+       <select name="" id="location" >
+        <option value="volvo">Kitisuru (Opan 9 am Closes || pm)</option>
+        <option value="saab">Kilimani (Hours Open 7:30 am Closes || 11pm)</option>
+       </select>
+    </div>
+    <div>
+        <label for="email address">Email Address</label>
+        <input type="email" name="" id="email address" placeholder="e.ginfo@email.com" required>
+    </div>
+    <div>
+        <label for="tel">Tel/Cell</label>
+        <input type="text" name="" id="tel" placeholder="e.g 0700 000 000" required>
+    </div>
+    <div>
+        <label for="guests">NUmber Of Guests</label>
+        <input type="number" name="" id="guests" placeholder="(maximum of 8 guests only)" min="1" max="8" required>
+    </div>
+    <div>
+        <label for="date">Date</label>
+        <input type="date" name="" id="date" placeholder="mm/dd/yyyy" required>
+    </div>
+    <div>
+        <label for="time">Time</label>
+        <input type="time" name="" id="time" required>
+    </div>
+    <button type="submit">Submit</button>
+   </div>
+   </div>
+</div>
+<div class="navigation-bar">
+    <a href="" class="navigation-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></a>
+    <a href="" class="navigation-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg></a>
+    <a href="./index.html" id="home">Home</a>
+    <a href="#">Menu</a>
+    <a href="">Reviews</a>
+    <a href="">Events</a>
+    <a href="">Live</a>
+    <a href="">contacts</a>
+    <div class="reservations-container">
+    <a href="./reservations.html">Reservations</a>
+    </div>
 </div>
 </body>
 </html>
