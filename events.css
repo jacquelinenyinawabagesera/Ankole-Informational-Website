@@ -1,0 +1,164 @@
+.images{
+    position:relative;
+    display: flex;
+    margin: 0;
+    width: 100vw;
+}
+.image{
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: 65vh 65vw;
+}
+.image:nth-child(2){
+    background-image: url(./images/nairobi.jpg);
+    
+}
+.image:nth-child(3){
+    background-image: url(./images/accra.jpg);
+
+}
+.image:nth-child(4){ 
+    background-image: url(./images/zanzibar.jpg);
+    
+ }
+
+
+.heading-container{
+    position: absolute;
+    top: 25vh;
+    left: 70vh;
+}
+.heading-container h2{
+    font-size: 12vh;
+    color: rgb(128, 123, 123);
+}
+.ankole-logo{
+    top: 10vh;
+    left: 85vh;
+    width: 20vh;
+    position: absolute;
+}
+.navigation-bar{
+    position: absolute;top: 85vh;left: 60vh;display: flex;gap: 2vh;background-color: rgb(9,10,10);padding: 2.1vh;border-radius: 5vh;
+}
+.navigation-bar a{
+  text-decoration: none;
+  color: white;
+  font-size: 2.1vh;
+  font-weight: bold;
+}
+.reservations-container{
+    background-color: rgb(115,115,115);padding: 1.5vh;border-radius: 5vh;margin-top:-0.9vh;
+}
+.reservations-container:hover{
+    background-color: white;
+    color: black;
+}
+.reservations-container a:hover{
+    color: black;
+}
+#home{
+    background-color: rgb(39, 38, 38);padding: 1.2vh;margin-top: -0.9vh;
+}
+#home:hover{
+    background-color: rgb(9,10,10);
+}
+.navigation-icons svg{
+    color: rgb(58, 54, 54);
+    font-size: 20vh;
+}
+.clock-icon{
+    position: relative;
+    display: block;
+    /* margin-top: 1.5%; */
+}
+.text-wrapper{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    padding: 2%;
+    border: none;
+    width: 15vw;
+    border-radius: 20px;
+    z-index: 1;
+    display: none;
+    bottom: 230%;
+    padding: 3vh;
+}
+.text-wrapper h2 p{
+    padding-left: 10vh;
+}
+
+.clock-icon:hover .text-wrapper{
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* reservations */
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .image-section {
+      height: 300px;
+    }
+
+    .form-section {
+      padding: 20px;
+    }
+  }
+
+
+
+
+
+
+@media screen and (min-width:768px)and (max-width:1350px){
+    .navigation-bar{
+        margin-left: -58vh;
+    }
+    .ankole-logo{
+        margin-left: -53vh;
+    }
+    .heading-container{
+        margin-left: -53vh;
+        position: fixed;
+    }
+}
+@media screen and (min-width:320px)and(max-width:767px){
+    .images{
+        width: 500vh;
+        height: 10vh;
+    }
+    .ankole-logo{
+        margin-left: -100vh;
+    }
+   
+}
