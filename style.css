@@ -82,7 +82,7 @@
     background-color: rgb(9,10,10);
 }
 .navigation-icons svg{
-    color: rgb(58, 54, 54);
+    color: white;
     font-size: 20vh;
 }
 .clock-icon{
@@ -233,7 +233,7 @@
       border: 1px solid rgb(17, 255, 17);
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .container {
       flex-direction: column;
     }
@@ -245,7 +245,7 @@
     .form-section {
       padding: 20px;
     }
-  }
+  } */
 
 
 
@@ -263,15 +263,34 @@
         margin-left: -53vh;
         position: fixed;
     }
+    .images{
+      width: 102.1vw;
+      height: 102vh;
+    }
+
 }
 @media screen and (min-width:320px)and(max-width:767px){
     .images{
-        width: 500vh;
-        height: 10vh;
+        /* width: 80vh;
+        margin: auto;
+        height: 100%;
+        position: relative; */
     }
-    .ankole-logo{
-        margin-left: -100vh;
-    }
+    /* .ankole-logo{
+       width: 100vw;
+    } */
+    .navigation-bar{
+      margin-left: -58vh;
+  }
+  .ankole-logo{
+      margin-left: -53vh;
+      position: absolute;
+  }
+  .heading-container{
+      margin-left: 50vh;
+      position: absolute;
+      /* position: fixed; */
+  }
    
 }
 
@@ -286,7 +305,7 @@
 
 
 .reservations-image{
-    background-image: url(./images/image6.jpg);
+    background-image: url(./images/reservations-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
