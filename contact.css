@@ -1,0 +1,163 @@
+@import url('https://fonts.cdnfonts.com/css/typewriter');
+.icons{
+    position: absolute;right: 10vh;top: 5vh;
+}
+body{
+    margin: 0;
+}
+.contact-container{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5)), linear-gradient(rgba(0, 0, 0, 0.5)), url(./images/contact.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100vw;
+position: relative;
+}
+.branch1-contact{
+    top: 35vh;
+    height: 34vh;
+    width: 40vh;
+    left: 50vh;
+    border: 0.3vh solid white;
+    position: absolute;
+    padding: 3vh;
+}
+.branch2-contact{
+    top: 35vh;
+    left: 80vh;
+    border: 0.3vh solid white;
+    position: absolute;
+    width: 45vh;
+    padding: 3vh;
+    height: 40vh;
+}
+p,h2{
+    color: white;
+}
+.contacts{
+max-width: 700px;
+max-height: 500px;
+margin: auto;
+padding: 60px 20px;
+display: flex;
+gap:30px;
+}
+.kitisuru{
+border:1px solid white;
+padding: 35px;
+/* margin-bottom: 30px; */
+/* background-color: rgba(66, 63, 63, 0.6); */
+color: white;
+width:800px;
+}
+#kiti{
+height:290px;
+/* width:1050px; */
+margin-top: 30vh;
+width:500vh;
+}
+#kili{
+width:500vh;
+/* padding: 5vh; */
+margin-top: 30vh;
+height: 34vh;
+}
+.kitisuru h2{
+font-size: 28px;
+margin-bottom: 10px;
+}
+.kitisuru a{
+color:#ddd;
+text-decoration: none;
+color: white;
+}
+h2{
+font-family: 'Typewriter', sans-serif;
+}
+p{
+    font-family: "Hum 521 Rm" sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+.navigation-bar{
+    position: absolute;top: 85vh;left: 60vh;display: flex;gap: 2vh;background-color: rgb(9,10,10);padding: 2.1vh;border-radius: 5vh;
+}
+.navigation-bar a{
+  text-decoration: none;
+  color: white;
+  font-size: 2.1vh;
+  font-weight: bold;
+}
+.reservations-container{
+    background-color: rgb(115,115,115);padding: 1.5vh;border-radius: 5vh;margin-top:-0.9vh;
+}
+.reservations-container:hover{
+    background-color: white;
+    color: black;
+}
+.reservations-container a:hover{
+    color: black;
+}
+#home{
+    background-color: rgb(39, 38, 38);padding: 1.2vh;margin-top: -0.9vh;
+}
+#home:hover{
+    background-color: rgb(9,10,10);
+}
+.navigation-icons svg{
+    color: white;
+    font-size: 20vh;
+}
+.clock-icon{
+    position: relative;
+    display: block;
+    /* margin-top: 1.5%; */
+}
+.text-wrapper{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    padding: 2%;
+    border: none;
+    width: 15vw;
+    border-radius: 20px;
+    z-index: 1;
+    display: none;
+    bottom: 230%;
+    padding: 3vh;
+}
+.text-wrapper h2 p{
+    padding-left: 10vh;
+}
+
+.clock-icon:hover .text-wrapper{
+    display: block;
+}
+
+.ankole-logo{
+    top: 10vh;
+    left: 85vh;
+    width: 20vh;
+    position: absolute;
+}
+
+
+
+
+@media screen and (min-width:320px)and(max-width:767px){
+    .ankole-logo{
+        position: fixed;
+    }
+    .contact-container{
+        width: 100vh;
+    }
+    .navigation-bar{
+        margin-left: -58vh;
+    }
+    .ankole-logo{
+        margin-left: -53vh;
+    }
+
+}

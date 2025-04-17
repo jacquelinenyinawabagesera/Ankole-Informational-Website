@@ -1,0 +1,48 @@
+@import url('https://fonts.cdnfonts.com/css/typewriter');
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.branches-container{
+    display: flex;
+}
+.katisuru-image img{
+    width: 49vw;
+    height: 100vh;
+}
+.kilimani-image img{
+    width: 60vw;
+    height: 100vh;
+}
+h3{
+    font-family: 'Typewriter', sans-serif;
+    color: rgb(179, 66, 21);
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+ font-size: 64px;
+}
+h6{
+    font-size: 16px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.whatsapp-icon{
+position: absolute;right: 10vh;bottom: 5vh;
+}
+.fa-whatsapp{
+color: white;font-size: 7vh;
+}
+.kitisuru-branch-container{
+    position: absolute;margin-top: -32%;margin-left: 40vh;
+}
+.kilimani-branch-container{
+    position: absolute;margin-top: -32%;margin-left: 40vh;
+}
+.socialmedia-icons{
+    position: absolute;right: 10vh;top: 5vh;
+}

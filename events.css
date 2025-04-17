@@ -1,3 +1,4 @@
+
 .images{
     position:relative;
     display: flex;
@@ -11,17 +12,25 @@
     background-size: 65vh 65vw;
 }
 .image:nth-child(2){
-    background-image: url(./images/nairobi.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5)), url(./images/nairobi.jpg);
     
 }
 .image:nth-child(3){
-    background-image: url(./images/accra.jpg);
+    background-image:linear-gradient(rgb(0, 0, 0, 0.5)), url(./images/accra.jpg);
 
 }
 .image:nth-child(4){ 
-    background-image: url(./images/zanzibar.jpg);
+    background-image:linear-gradient(rgb(0, 0, 0, 0.5)), url(./images/zanzibar.jpg);
     
  }
+
+
+.whatsapp-icon{
+    position: absolute;right: 10vh;bottom: 5vh;
+  }
+  .fa-whatsapp{
+    color: white;font-size: 7vh;
+  }
 
 
 .heading-container{
@@ -97,15 +106,40 @@
 
 
 
+@import url('https://fonts.cdnfonts.com/css/typewriter');
+@import url('https://fonts.cdnfonts.com/css/brominates');
+.accra-container{
+  margin-top: 35vh;
 
-
-
-
-
-/* reservations */
-
-
-
+}
+     h6,h2,p,h5{
+    text-align: center;
+  }
+  .accra-container h2{
+color: white;
+font-family: 'Typewriter', sans-serif;
+font-size: 48px;
+  }
+  .accra-container h6{
+    font-family: 'Typewriter', sans-serif;
+    font-size: 16px;
+    color: rgb(175, 171, 171);
+  }
+  .accra-container h5{
+    font-family: "Hum 521 Rm", sans-serif;
+    font-size: 16px;
+    color: 
+    rgb(250, 206, 141);
+    font-weight:400;
+  }
+  .accra-container p{
+    color: white;
+    font-family: "Hum 521 Rm", sans-serif;
+    font-size: 16px;
+  }
+  .socialmedia-icons{
+    position: absolute;right: 10vh;top: 5vh;
+  }
 
 
 

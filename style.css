@@ -1,6 +1,15 @@
-.images{
+@import url("https://db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter+Normal");
+
+body{
+  margin: 0;
+}
+
+.homepage-container{
+  position: relative;
+}
+.homepageimage-container{
     width: 100%;
-    height: 99vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     position:absolute;
@@ -8,26 +17,26 @@
     animation: slideAnimation 25s infinite forwards;
 }
 
-.images:nth-child(1){
+.homepageimage-container:nth-child(1){
     background-image: url(./images/image1.jpg);
     animation-delay: 0s;
 }
-.images:nth-child(2){
+.homepageimage-container:nth-child(2){
     background-image: url(./images/discover-image.jpg);
     animation-delay: 5s;
     
 }
-.images:nth-child(3){
+.homepageimage-container:nth-child(3){
     background-image: url(./images/image3.jpg);
     animation-delay: 10s;
 
 }
-.images:nth-child(4){
+.homepageimage-container:nth-child(4){
     background-image: url(./images/image4.jpg);
     animation-delay: 15s;
 
 }
-.images:nth-child(5){
+.homepageimage-container:nth-child(5){
     background-image: url(./images/image5.jpg);
     animation-delay: 20s;
     
@@ -41,14 +50,16 @@
   100%{opacity:0;}
 }
 
-.heading-container{
+.homepageheading-container{
     position: absolute;
     top: 25vh;
     left: 70vh;
 }
-.heading-container h2{
-    font-size: 12vh;
-    color: rgb(128, 123, 123);
+.homepageheading-container h2{
+    font-size: 144px;
+    color: rgba(115, 115, 115, 0.81);
+    font-family: "American Typewriter Normal";
+    font-weight: 500;
 }
 .ankole-logo{
     top: 10vh;
@@ -112,200 +123,85 @@
     display: block;
 }
 
+.whatsapp-icon{
+  position: absolute;right: 10vh;bottom: 5vh;
+}
+.fa-whatsapp{
+  color: white;font-size: 7vh;
+}
+.social-icons{
+  position: absolute;right: 10vh;top: 5vh;
+}
 
-
-
-
-
-
-
-/* reservations */
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+  .images {
+    width: 100vw;
+    height: 100vh; 
   }
-
-  body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    height: 100%;
-    background-color: #f9f9f9;
+  .navigation-bar {
+    margin-left: -58vh;
   }
-  
-
-  .container {
-    display: flex;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    position: relative;
+  .ankole-logo {
+    margin-left: -53vh;
   }
-
-  .form-section {
-    flex: 1;
-    min-width: 300px;
-    padding: 40px;
-    background-color:rgb(5,5,5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .homepageheading-container{
+    margin-left: -53vh;
+    position: fixed;
   }
-
-  .form-wrapper {
-    width: 100%;
-    max-width: 500px;
-    margin-top: -18vh;
+  .images {
+    width: 102.1vw;
+    height: 102vh;
   }
-
-  .form-wrapper h2 {
-    margin-bottom: 25px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .images {
+    width: 100vw;
+    height: 100vh; 
+  }
+  .homepageheading-container{
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    color: #333;
+    width: 90vw;
   }
-
-  form {
-    display: flex;
-    flex-direction: column;
+  .homepageheading-container h2 {
+    font-size: 8vh;
   }
-
-  .form-group {
-    margin-bottom: 15px;
-    margin-left: -10vh;
+  .ankole-logo {
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vh;
   }
-
-  .form-group label {
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block;
-    color: white;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+  .navigation-bar {
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    gap: 1vh;
+    padding: 1vh 2vh;
+    font-size: 2vh;
+    border-radius: 3vh;
+    max-width: 95vw;
+    background-color: rgba(9, 10, 10, 0.85);
   }
-
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    padding: 1.5vh;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-    background-color: rgb(5,5,5);
-    width: 70vh;
+  .navigation-bar a {
+    font-size: 2vh;
   }
-   .form-group input:hover{
-      border:1px solid rgb(9, 255, 9);
-   }
-  .form-group input:focus,
-  .form-group select:focus {
-    outline: none;
+  .reservations-container {
+    padding: 1vh;
+    margin-top: 0;
   }
-
-  .submit-btn {
-    background-color: rgb(242,213,165);
-    color: black;
-    padding: 3vh;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 70vh;
-    margin-left: -10vh;
+  .navigation-icons svg {
+    font-size: 5vh;
   }
-
-  .submit-btn:hover {
-    background-color: rgb(221, 194, 150);
-    color: white;
+  .clock-icon .text-wrapper {
+    width: 80vw;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2vh;
   }
-
-  .image-section {
-    flex: 1;
-    min-height: 100vh;
-    background: url(./images/goodflower.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  select:hover{
-      border: 1px solid rgb(17, 255, 17);
-  }
-
-  /* @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-
-    .image-section {
-      height: 300px;
-    }
-
-    .form-section {
-      padding: 20px;
-    }
-  } */
-
-
-
-
-
-
-@media screen and (min-width:768px)and (max-width:1350px){
-    .navigation-bar{
-        margin-left: -58vh;
-    }
-    .ankole-logo{
-        margin-left: -53vh;
-    }
-    .heading-container{
-        margin-left: -53vh;
-        position: fixed;
-    }
-    .images{
-      width: 102.1vw;
-      height: 102vh;
-    }
-
-}
-@media screen and (min-width:320px)and(max-width:767px){
-    .images{
-        /* width: 80vh;
-        margin: auto;
-        height: 100%;
-        position: relative; */
-    }
-    /* .ankole-logo{
-       width: 100vw;
-    } */
-    .navigation-bar{
-      margin-left: -58vh;
-  }
-  .ankole-logo{
-      margin-left: -53vh;
-      position: absolute;
-  }
-  .heading-container{
-      margin-left: 50vh;
-      position: absolute;
-      /* position: fixed; */
-  }
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-.reservations-image{
-    background-image: url(./images/reservations-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
