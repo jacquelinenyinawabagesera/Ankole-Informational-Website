@@ -1,303 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./explore-menu.css">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        .menu-division{
-            display: flex;
-            background-color: rgb(5,5,5);
-        }
-        .scarf-image img{
-            width: 100vh;
-            height: 98.1vh;
-            position: relative;
-        }
-        .food-description{
-            background-color: black;
-            width: 100vh;
-            height: 100vh;
-            overflow:scroll;
-        }
-        p,h2{
-            color: white;
-        }
-        .food-amount-container{
-            display: flex;
-            gap: 55vh;
-        }
-        .food-exception-container img{
-            width: 10vh;
-        }
-        .food-exception-container{
-            display: flex;
-            gap: 10vh;
-        }
-        .navigation{
-            display: flex;
-           justify-content: center;
-           gap: 5vh;
-        }
-        .navigation a{
-            color: rgb(228, 212, 212);
-            text-decoration: none;
-        }
-        /* .content-container{
-
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 10vh;
-gap: 5vh;
-position: absolute;
-}
-.haribu-heading{
-color: white;
-font-size: 3vh;
-text-align: center;
-}
-.reservations-heading{
-color: rgb(179,66,21);
-font-size: 5vh;
-
-}
-.content-container img{
-width: 20vh;
-} */
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="menu-division">
-        <div class="scarf-image">
-           <img src="./images/scarf.jpg" alt="">
-           <!-- <div class="content-container">
-            <img src="./images/ankole.svg" alt="" >
-            <div class="branch-text">
-            <h2 class="haribu-heading">Karibu</h2>
-            <h2 class="reservations-heading">Reservation</h2>
-            </div>
-            </div> -->
-           
-        </div>
-        <div class="food-description">
-           <nav class="navigation">
-            <a href="#breakfast">Breakfast</a>
-            <a href="#food">Food</a>
-            <a href="#drinks">Drinks</a>
-           </nav>
-           <div id="breakfast" style="margin: 10vh;">
-           <div>
-           <h2>Breakfast</h2>
-           <p>Kilimani - breakfast is served from 7.30am to 11.00am daily</p>
-           <p>Kitisuru - breakfast is served from 9.00am to 11.00am daily</p>
-           <h2>COFFEE . TEA .CHOCOLATE</h2>
-           </div>
-           <div class="food-amount-container">
-            <div>
-               <p>Freshly Brewed Coffee</p>
-               <p>Espresso</p> 
-               <p>Cappuccino</p> 
-                <p>Latte</p>
-               <p>Mocha </p> 
-            </div>
-            <div>
-                <p>Kshs 250</p>
-                <p>Kshs 250</p>
-                <p>Kshs 350</p>
-                <p>Kshs 390</p> 
-                <p>Ksh 400</p> 
-            </div>
-           </div>
-           <div>
-            <div style="display: flex;flex-direction: column;gap: 10vh;">
-                <div class="food-exception-container">
-                  <img src="./images/ankole.svg" alt="">
-                 <div>
-                    <h2>ANKOLE BIG BREAKFAST</h2>
-                    <p>2 eggs, 150gms grilled fillet steak, toast, hash browns, grilled tomato, <br> BBQ baked beans</p>
-                 </div>
-                 <p>Kshs 1500</p>
-                </div>
-                <div class="food-exception-container">
-                    <img src="./images/ankole.svg" alt="">
-                   <div>
-                    <h2>HASH BROWNS, EGGS AND TOAST</h2>
-                      <p>with bacon or sausage</p>
-                   </div>
-                   <p>Kshs 1500</p>
-                  </div>
-                  <div class="food-exception-container">
-                    <img src="./images/ankole.svg" alt="">
-                   <div>
-                    <h2>RANCH BREAKFAST</h2>
-                      <p>2 eggs, tortilla, pulled pork, ranchero sauce, bacon, melted gouda,<br> avocado, kachumbari</p>
-                   </div>
-                   <p>Kshs 1500</p>
-                  </div>
-                  <div class="food-exception-container">
-                    <img src="./images/ankole.svg" alt="">
-                   <div>
-                    <h2>RANCH BREAKFAST</h2>
-                      <p>served with wild honey, whipped <br>
-                        cream and a side of fruit salad</p>
-                   </div>
-                   <p>Kshs 1500</p>
-                  </div>
-                  <div class="food-exception-container"> 
-                    <img src="./images/ankole.svg" alt="">
-                   <div>
-                   <h2>TOASTED BACON AVOCADO BREAKFAST SANDWICH</h2>
-                      <p>2 eggs, cheese, bacon, avocado, red pepper</p>
-                   </div>
-                   <p>Kshs 1500</p>
-                  </div>
-            </div>
-           </div>
-           </div>
-           <div id="food" style="margin: 10vh;">
-            <h2>Soups</h2>
-            <div class="food_container">
-                <div style="display: flex;gap: 50vh;">
-                  <p>SPICY WEST AFRICAN MBUZI SOUP</p>
-                  <p>Cup Kshs 480 <br>
-                    Bowl Kshs 720</p>
-                </div>
-                <div style="display: flex;gap: 47vh;">
-                  <p>SPICY MUSHROOM CREAM MBUZI SOUP</p>
-                  <p>Cup Kshs 580 <br>
-                    Bowl Kshs 880</p>
-                </div>
-                <div style="display: flex;flex-direction: column;gap: 10vh;">
-                    <div class="food-exception-container">
-                      <img src="./images/ankole.svg" alt="">
-                     <div>
-                        <h2>ANKOLE BIG BREAKFAST</h2>
-                        <p>2 eggs, 150gms grilled fillet steak, toast, hash browns, grilled tomato, <br> BBQ baked beans</p>
-                     </div>
-                     <p>Kshs 1500</p>
-                    </div>
-                    <div class="food-exception-container">
-                        <img src="./images/ankole.svg" alt="">
-                       <div>
-                        <h2>HASH BROWNS, EGGS AND TOAST</h2>
-                          <p>with bacon or sausage</p>
-                       </div>
-                       <p>Kshs 1500</p>
-                      </div>
-                      <div class="food-exception-container">
-                        <img src="./images/ankole.svg" alt="">
-                       <div>
-                        <h2>RANCH BREAKFAST</h2>
-                          <p>2 eggs, tortilla, pulled pork, ranchero sauce, bacon, melted gouda,<br> avocado, kachumbari</p>
-                       </div>
-                       <p>Kshs 1500</p>
-                      </div>
-                      <div class="food-exception-container">
-                        <img src="./images/ankole.svg" alt="">
-                       <div>
-                        <h2>RANCH BREAKFAST</h2>
-                          <p>served with wild honey, whipped <br>
-                            cream and a side of fruit salad</p>
-                       </div>
-                       <p>Kshs 1500</p>
-                      </div>
-                      <div class="food-exception-container"> 
-                        <img src="./images/ankole.svg" alt="">
-                       <div>
-                       <h2>TOASTED BACON AVOCADO BREAKFAST SANDWICH</h2>
-                          <p>2 eggs, cheese, bacon, avocado, red pepper</p>
-                       </div>
-                       <p>Kshs 1500</p>
-                      </div>
-                </div>
-
-            </div>
-           </div>
-           <div id="drinks" style="margin: 10vh;">
-            <h2>Drinks</h2>
-            <h2>FRESH JUICES</h2>
-            <div style="display: flex;gap: 65vh;">
-                <div>
-                  <p>MANGO</p>
-                  <p>PINEAPPLE</p>
-                   <p>TREE TOMATO</p>
-                   <p> PASSION</p>
-                   <p>SUGARCANE</p>
-                </div>
-                <div>
-                   <p>Kshs 700</p>
-                   <p>Kshs 700</p>
-                   <p>Kshs 700 </p>
-                   <p> Kshs 700 </p>
-                  <p>Kshs 700 </p>
-                </div>
-            </div>
-            <h2>FRESH JUICE COCKTAILS</h2>
-            <div style="display: flex;gap: 65vh;">
-                <div>
-                  <p>MANGO</p>
-                  <p>PINEAPPLE</p>
-                   <p>TREE TOMATO</p>
-                   <p> PASSION</p>
-                   <p>SUGARCANE</p>
-                </div>
-                <div>
-                   <p>Kshs 700</p>
-                   <p>Kshs 700</p>
-                   <p>Kshs 700 </p>
-                   <p> Kshs 700 </p>
-                  <p>Kshs 700 </p>
-                </div>
-            </div>
-            <h2>MILKSHAKES</h2>
-            <div style="display: flex;gap: 65vh;">
-                <div>
-                  <p>MANGO</p>
-                  <p>PINEAPPLE</p>
-                   <p>TREE TOMATO</p>
-                   <p> PASSION</p>
-                   <p>SUGARCANE</p>
-                </div>
-                <div>
-                   <p>Kshs 700</p>
-                   <p>Kshs 700</p>
-                   <p>Kshs 700 </p>
-                   <p> Kshs 700 </p>
-                  <p>Kshs 700 </p>
-                </div>
-            </div>
-           </div>
-        </div>
-    </div>
-    <div class="navigation-bar" style="margin-left: -50vh;">
-        <div>
-          <a href="" class="navigation-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></a>
-        </div>
-          <div class="clock-icon">
-          <a href="" class="navigation-icons"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg></a>
-          <div class="text-wrapper">
-           <p>Opening Hours</p>
-           <h2>Kitisuru</h2>
-           <p>Mon - Sun</p>
-           <p>9.00am - 11.00pm</p>
-           <h2>Kilimani</h2>
-           <p>Mon - Sun</p>
-            <p>7.30am - 11.00pm</p>
-          </div>
-          </div>
-          <a href="#" id="home">Home</a>
-          <a href="#" >Menu</a>
-          <a href="">Reviews</a>
-          <a href="">Events</a>
-          <a href="">Live</a>
-        <div>
-          <a href="./contact.html">contacts</a>
-        </div>
-          <div class="reservations-container">
-          <a href="./reservations.html">Reservations</a>
-          </div>
+      <div class="scarf-image">
+        <img src="./images/scarf.jpg" alt="" />
       </div>
-</body>
+      <div class="food-description">
+        <nav class="navigation">
+          <a href="#breakfast">Breakfast</a>
+          <a href="#food">Food</a>
+          <a href="#drinks">Drinks</a>
+        </nav>
+        <div id="breakfast">
+          <div>
+            <h2>Breakfast</h2>
+            <p>Kilimani - breakfast is served from 7.30am to 11.00am daily</p>
+            <p>Kitisuru - breakfast is served from 9.00am to 11.00am daily</p>
+            <h2>COFFEE . TEA .CHOCOLATE</h2>
+          </div>
+          <div class="food-amount-container">
+            <div>
+              <p>Freshly Brewed Coffee</p>
+              <p>Espresso</p>
+              <p>Cappuccino</p>
+              <p>Latte</p>
+              <p>Mocha</p>
+            </div>
+            <div>
+              <p>Kshs 250</p>
+              <p>Kshs 250</p>
+              <p>Kshs 350</p>
+              <p>Kshs 390</p>
+              <p>Ksh 400</p>
+            </div>
+          </div>
+          <div>
+            <div class="breakfast-container">
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>ANKOLE BIG BREAKFAST</h2>
+                  <p>
+                    2 eggs, 150gms grilled fillet steak, toast, hash browns,
+                    grilled tomato, <br />
+                    BBQ baked beans
+                  </p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>HASH BROWNS, EGGS AND TOAST</h2>
+                  <p>with bacon or sausage</p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>RANCH BREAKFAST</h2>
+                  <p>
+                    2 eggs, tortilla, pulled pork, ranchero sauce, bacon, melted
+                    gouda,<br />
+                    avocado, kachumbari
+                  </p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>RANCH BREAKFAST</h2>
+                  <p>
+                    served with wild honey, whipped <br />
+                    cream and a side of fruit salad
+                  </p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>TOASTED BACON AVOCADO BREAKFAST SANDWICH</h2>
+                  <p>2 eggs, cheese, bacon, avocado, red pepper</p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="food">
+          <h2>Soups</h2>
+          <div class="food_container">
+            <div class="soups-container">
+              <p>SPICY WEST AFRICAN MBUZI SOUP</p>
+              <p>
+                Cup Kshs 480 <br />
+                Bowl Kshs 720
+              </p>
+            </div>
+            <div class="spicy-soup">
+              <p>SPICY MUSHROOM CREAM MBUZI SOUP</p>
+              <p>
+                Cup Kshs 580 <br />
+                Bowl Kshs 880
+              </p>
+            </div>
+            <div class="food-description-container">
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>ANKOLE BIG BREAKFAST</h2>
+                  <p>
+                    2 eggs, 150gms grilled fillet steak, toast, hash browns,
+                    grilled tomato, <br />
+                    BBQ baked beans
+                  </p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>HASH BROWNS, EGGS AND TOAST</h2>
+                  <p>with bacon or sausage</p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>RANCH BREAKFAST</h2>
+                  <p>
+                    2 eggs, tortilla, pulled pork, ranchero sauce, bacon, melted
+                    gouda,<br />
+                    avocado, kachumbari
+                  </p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>RANCH BREAKFAST</h2>
+                  <p>
+                    served with wild honey, whipped <br />
+                    cream and a side of fruit salad
+                  </p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+              <div class="food-exception-container">
+                <img src="./images/ankole.svg" alt="" />
+                <div>
+                  <h2>TOASTED BACON AVOCADO BREAKFAST SANDWICH</h2>
+                  <p>2 eggs, cheese, bacon, avocado, red pepper</p>
+                </div>
+                <p>Kshs 1500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="drinks">
+          <h2>Drinks</h2>
+          <h2>FRESH JUICES</h2>
+          <div class="drinks-container">
+            <div>
+              <p>MANGO</p>
+              <p>PINEAPPLE</p>
+              <p>TREE TOMATO</p>
+              <p>PASSION</p>
+              <p>SUGARCANE</p>
+            </div>
+            <div>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+            </div>
+          </div>
+          <h2>FRESH JUICE COCKTAILS</h2>
+          <div class="drinks-container"></div>>
+            <div>
+              <p>MANGO</p>
+              <p>PINEAPPLE</p>
+              <p>TREE TOMATO</p>
+              <p>PASSION</p>
+              <p>SUGARCANE</p>
+            </div>
+            <div>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+            </div>
+          </div>
+          <h2>MILKSHAKES</h2>
+          <div class="drinks-container">
+            <div>
+              <p>MANGO</p>
+              <p>PINEAPPLE</p>
+              <p>TREE TOMATO</p>
+              <p>PASSION</p>
+              <p>SUGARCANE</p>
+            </div>
+            <div>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+              <p>Kshs 700</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-bar">
+      <div class="content-container">
+        <img src="./images/ankole.svg" alt="" />
+        <div class="branch-text">
+          <h2 class="haribu-heading">Karibu</h2>
+          <h2 class="reservations-heading">Reservation</h2>
+        </div>
+      </div>
+      <div>
+        <a href="" class="navigation-icons"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu-icon lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" /></svg></a>
+      </div>
+      <div class="clock-icon">
+        <a href="" class="navigation-icons"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-clock3-icon lucide-clock-3"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16.5 12" /></svg></a>
+        <div class="text-wrapper">
+          <p>Opening Hours</p>
+          <h2>Kitisuru</h2>
+          <p>Mon - Sun</p>
+          <p>9.00am - 11.00pm</p>
+          <h2>Kilimani</h2>
+          <p>Mon - Sun</p>
+          <p>7.30am - 11.00pm</p>
+        </div>
+      </div>
+      <a href="./index.html" id="home">Home</a>
+      <a href="./menu.html">Menu</a>
+      <a href="./reviews.html">Reviews</a>
+      <a href="./events.html">Events</a>
+      <a href="">Live</a>
+      <div>
+        <a href="./contact.html">contacts</a>
+      </div>
+      <div class="reservations-container">
+        <a href="./reservations.html">Reservations</a>
+      </div>
+    </div>
+  </body>
 </html>

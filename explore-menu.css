@@ -1,0 +1,99 @@
+.menu-division {
+    display: flex;
+    background-color: rgb(5, 5, 5);
+  }
+  .scarf-image {
+    position: relative;
+  }
+  .scarf-image img {
+    width: 100vh;
+    height: 98.1vh;
+    position: relative;
+  }
+  .food-description {
+    background-color: black;
+    width: 100vh;
+    height: 100vh;
+    overflow: scroll;
+  }
+  p,
+  h2 {
+    color: white;
+  }
+  .food-amount-container {
+    display: flex;
+    gap: 55vh;
+  }
+  .food-exception-container img {
+    width: 10vh;
+  }
+  .food-exception-container {
+    display: flex;
+    gap: 10vh;
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+  }
+  .navigation a {
+    color: rgb(228, 212, 212);
+    text-decoration: none;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 11vh;
+    position: absolute;
+    margin-top: -80vh;
+    margin-left: 20vh;
+  }
+
+  .haribu-heading {
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    font-family: "Typewriter", sans-serif;
+  }
+
+  .reservations-heading {
+    color: rgb(179, 66, 21);
+    font-size: 5vh;
+    font-family: "Typewriter", sans-serif;
+  }
+
+  .content-container img {
+    width: 20vh;
+  }
+  nav {
+    margin-top: 5vh;
+  }
+  #breakfast{
+    margin: 10vh
+  }
+  .breakfast-container{
+    display: flex; flex-direction: column; gap: 10vh
+  }
+  .soups-container{
+    display: flex; gap: 50vh
+  }
+  #food{
+    margin: 10vh
+  }
+  #drinks{
+    margin: 10vh
+  }
+  .spicy-soup{
+    display: flex; gap: 47vh
+  }
+  .drinks-container{
+    display: flex; gap: 65vh
+  }
+  .navigation-bar{
+  margin-left: -50vh
+  }
+  .food-description-container{
+    display: flex; flex-direction: column; gap: 10vh
+  }
