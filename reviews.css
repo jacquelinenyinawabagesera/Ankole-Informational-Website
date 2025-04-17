@@ -1,0 +1,72 @@
+.reviews-container{display:none;}
+
+.reviews-container{
+        background-color: rgb(0,0,0);
+        width: 100vw;
+        height: 100vh;
+    }
+    body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .reviews-heading{
+    position: absolute;
+    top: 30vh;
+    left:85vh;
+}
+.reviews-heading h2{
+    font-size: 5vh;
+    color: rgb(128, 123, 123);
+}
+p,h2{
+    color: white;
+}
+.nav-button{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 18px;
+    left: 100;
+}
+.display-left{
+    margin-left: 60vh;
+    font-size: 4vh;
+    color: rgb(194, 189, 189);
+}
+.display-right{
+    margin-left: 140vh;
+    font-size: 4vh;
+    color: rgb(192, 188, 188);
+}
+.quote-icons {
+    font-size: 24px;
+    color: orange;
+}
+.fa-quote-left{
+    margin-left: -55%;
+}
+.fa-quote-right{
+    margin-left: 55%;
+}
+.reviews-description{
+  position: absolute;top: 40vh;left: 60vh;
+}
+.fa-quote-left{
+  color: rgb(179,66,21);font-size: 3vh;margin-left: 1vh;
+}
+.fa-quote-right{
+  color:rgb(179,66,21);font-size: 3vh;margin-left: 80vh;
+}
+.reviews-paragraph{
+  text-align: center;
+}
+.socialmedia-icons{
+  position: absolute;right: 10vh;top: 5vh;
+}
