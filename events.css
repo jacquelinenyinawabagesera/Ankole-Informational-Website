@@ -140,6 +140,16 @@ font-size: 48px;
   .socialmedia-icons{
     position: absolute;right: 10vh;top: 5vh;
   }
+  .whatsapp-icon{
+    position: absolute;right: 10vh;bottom: 5vh;
+    background-color: rgb(15,15,15);
+    padding: 1vh;
+    border-radius: 5vh;
+  }
+  .fa-whatsapp{
+    color: white;font-size: 4vh;
+  
+  }
 
 
 

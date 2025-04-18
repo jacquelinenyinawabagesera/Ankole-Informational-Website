@@ -94,7 +94,7 @@
     line-height:26px;
     font-weight: 400;
     font-family: "Typewriter", sans-serif;
-    margin-left: 10vh;
+    /* margin-left: 1vh; */
   }
 
   .haribu-heading {
@@ -137,9 +137,20 @@
   .drinks-container{
     display: flex;justify-content: center;gap: 50vh;
   }
+  
   .navigation-bar{
   margin-left: -50vh
   }
   .food-description-container{
     display: flex; flex-direction: column; gap: 10vh
+  }
+  .whatsapp-icon{
+    position: absolute;right: 10vh;bottom: 5vh;
+    /* background-color: rgb(15,15,15); */
+    padding: 1vh;
+    border-radius: 5vh;
+  }
+  .fa-whatsapp{
+    font-size: 4vh;
+  
   }

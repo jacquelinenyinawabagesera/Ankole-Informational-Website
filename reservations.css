@@ -215,7 +215,17 @@ select:hover {
 .clock-icon:hover .text-wrapper {
   display: block;
 }
+.whatsapp-icon{
+  position: absolute;right: 10vh;bottom: 5vh;
+  /* background-color: rgb(15,15,15); */
+  padding: 1vh;
+  border-radius: 5vh;
+  border: 2px solid white;
+}
+.fa-whatsapp{
+ font-size: 4vh;
 
+}
 @media (max-width: 1200px) {
   .form-wrapper {
     margin-top: 0;
