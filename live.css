@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Typewriter', sans-serif;
+    background: #000;
+}
+.live-container {
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("./images/live.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+.ankole-logo {
+    bottom: 30vh;
+    right: -5vh;
+    width: 20vh;
+    position: absolute;
+}
+.navigation-bar {
+    position: absolute;
+    top: 85vh;
+    left: 60vh;
+    display: flex;
+    gap: 2vh;
+    background-color: rgb(9,10,10);
+    padding: 2.1vh;
+    border-radius: 5vh;
+    margin-left: -50vh;
+}
+.navigation-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.1vh;
+    font-weight: bold;
+}
+.reservations-container {
+    background-color: rgb(115,115,115);
+    padding: 1.5vh;
+    border-radius: 5vh;
+    margin-top: -0.9vh;
+}
+.reservations-container:hover {
+    background-color: white;
+    color: black;
+}
+.reservations-container a:hover {
+    color: black;
+}
+#home {
+    background-color: rgb(39, 38, 38);
+    padding: 1.2vh;
+    margin-top: -0.9vh;
+}
+#home:hover {
+    background-color: rgb(9,10,10);
+}
+.navigation-icons svg {
+    color: white;
+    font-size: 20vh;
+}
+.clock-icon {
+    position: relative;
+    display: block;
+}
+.text-wrapper {
+    display: inline-block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    padding: 2%;
+    border: none;
+    width: 15vw;
+    border-radius: 20px;
+    z-index: 1;
+    display: none;
+    bottom: 230%;
+    padding: 3vh;
+}
+.clock-icon:hover .text-wrapper {
+    display: block;
+}
+.whatsapp-icon {
+    position: absolute;
+    right: 10vh;
+    bottom: 5vh;
+}
+.fa-whatsapp {
+    color: white;
+    font-size: 7vh;
+}
+.social-icons {
+    position: absolute;
+    right: 10vh;
+    top: 5vh;
+}
+.branch-text {
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: 43vh;
+}
+.menu-heading {
+    font-family: 'Typewriter', sans-serif;
+    color: rgb(179, 66, 21);
+    font-size: 64px;
+}
+.menu-ticket-heading {
+    color: white;
+    font-size: 30px;
+    font-family: 'Typewriter', sans-serif;
+}
+
+.live-hosts-container {
+    position: absolute;
+    top:50h;
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+    z-index: 2;
+}
+.host-row {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.host1-image{
+    width: 18vw;
+    /* background-repeat: no-repeat; */
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.host2-image{
+    width: 18vw;
+    /* background-repeat: no-repeat; */
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.host3-image{
+    width: 18vw;
+    /* background-repeat: no-repeat; */
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.host-info {
+    color: white;
+}
+h6{
+    font-family: 'Typewriter', sans-serif;
+color: rgb(179, 66, 21);
+font-size: 16px;
+text-align: center;
+font-weight: 400;
+line-height: 21px;
+}
+p{
+    font-family: 'Typewriter', sans-serif;
+color: white;
+font-size: 24px;
+text-align: center;
+font-weight: 400;
+line-height: 31px;  
+}
+.host-info a{
+    text-decoration: none;
+}
