@@ -181,3 +181,200 @@ line-height: 31px;
     color: white;font-size: 4vh;
   
   }
+
+
+
+  
+  @media only screen and (max-width: 820px) {
+    .live-container {
+      background-position: center;
+      position: sticky; 
+      height: 100vh;
+      width: 100vw;
+      background-size: cover;
+      background-position: center;
+      overflow: auto;
+
+    }
+    .host-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2vw;
+  }
+  
+    .ankole-logo {
+      width: 18vh;
+      bottom: 25vh;
+      right: 0;
+      overflow: scroll;
+    }
+  
+    .navigation-bar {
+      position: fixed;
+      top: 85vh;
+      flex-wrap: wrap;
+      left: 50vh;
+      margin-left: -50vh;
+      /* padding: 2vh 3vw; */
+      border-radius: 5vh;
+      gap: 2vh;
+    }
+  
+    .navigation-bar a {
+      font-size: 2vh;
+    }
+  
+    .reservations-container, #home {
+      padding: 1.5vh 3vw;
+      border-radius: 5vh;
+      margin-top: -0.9vh;
+    }
+  
+    .live-hosts-container {
+      position: absolute;
+      top: 50vh;
+      right: 5vw;
+      display: flex;
+      flex-direction: column;
+      gap: 6vh;
+      z-index: 2;
+    }
+  
+    .host1-image, .host2-image, .host3-image {
+      width: 90vw;
+      max-width: 90vw;
+      margin: auto;
+      height: 50vh;
+      flex-shrink: 0; 
+    }
+  
+    .host-info {
+      font-size: 1.5vh;
+    }
+  
+    .menu-heading {
+      font-size: 64px;
+    }
+  
+    .menu-ticket-heading {
+      font-size: 30px;
+    }
+  
+    .whatsapp-icon {
+      right: 10vh;
+      bottom: 5vh;
+      padding: 1vh;
+      border-radius: 5vh;
+    }
+  
+    .fa-whatsapp {
+      font-size: 4vh;
+    }
+  
+    .branch-text {
+      margin-top: -20vh;
+      margin-left: 15vh;
+    }
+  
+    .text-wrapper {
+      width: 15vw;
+      bottom: 230%;
+      padding: 3vh;
+      font-size: 1.5vh;
+    }
+  }
+  
+  @media only screen and (min-width: 821px) and (max-width: 2000px) {
+    .live-container {
+      background-position: center;
+      position: sticky; 
+      height: 100vh;
+      width: 100vw;
+      background-size: cover;
+      background-position: center;
+      overflow: auto;
+
+    }
+  
+    .ankole-logo {
+      width: 18vh;
+      bottom: 25vh;
+      right: 0;
+      overflow: scroll;
+    }
+  
+    .navigation-bar {
+      position: fixed;
+      top: 85vh;
+      flex-wrap: wrap;
+      left: 50vh;
+      margin-left: -50vh;
+      /* padding: 2vh 3vw; */
+      border-radius: 5vh;
+      gap: 2vh;
+    }
+  
+    .navigation-bar a {
+      font-size: 2vh;
+    }
+  
+    .reservations-container, #home {
+      padding: 1.5vh 3vw;
+      border-radius: 5vh;
+      margin-top: -0.9vh;
+    }
+  
+    .live-hosts-container {
+      position: absolute;
+      top: 50vh;
+      right: 5vw;
+      display: flex;
+      flex-direction: column;
+      gap: 6vh;
+      z-index: 2;
+    }
+  
+    .host1-image, .host2-image, .host3-image {
+      width: 40vw;
+      height: 35vh;
+      flex-shrink: 0; 
+    }
+  
+    .host-info {
+      font-size: 1.5vh;
+    }
+  
+    .menu-heading {
+      font-size: 64px;
+    }
+  
+    .menu-ticket-heading {
+      font-size: 30px;
+    }
+  
+    .whatsapp-icon {
+      right: 10vh;
+      bottom: 5vh;
+      padding: 1vh;
+      border-radius: 5vh;
+    }
+  
+    .fa-whatsapp {
+      font-size: 4vh;
+    }
+  
+    .branch-text {
+      /* position: fixed; */
+      margin-top: -20vh;
+      margin-left: 9vh;
+    }
+  
+    .text-wrapper {
+      width: 15vw;
+      bottom: 230%;
+      padding: 3vh;
+      font-size: 1.5vh;
+    }
+  }
+  

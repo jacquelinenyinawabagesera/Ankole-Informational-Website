@@ -45,20 +45,16 @@ gap:30px;
 .kitisuru{
 border:1px solid white;
 padding: 35px;
-/* margin-bottom: 30px; */
-/* background-color: rgba(66, 63, 63, 0.6); */
 color: white;
 width:800px;
 }
 #kiti{
 height:290px;
-/* width:1050px; */
 margin-top: 30vh;
 width:500vh;
 }
 #kili{
 width:500vh;
-/* padding: 5vh; */
 margin-top: 30vh;
 height: 34vh;
 }
@@ -112,7 +108,6 @@ p{
 .clock-icon{
     position: relative;
     display: block;
-    /* margin-top: 1.5%; */
 }
 .text-wrapper{
     display: inline-block;
@@ -146,18 +141,25 @@ p{
 
 
 
-@media screen and (min-width:320px)and(max-width:767px){
-    .ankole-logo{
-        position: fixed;
-    }
-    .contact-container{
-        width: 100vh;
-    }
-    .navigation-bar{
-        margin-left: -58vh;
-    }
-    .ankole-logo{
-        margin-left: -53vh;
-    }
-
-}
+@media only screen and (max-width: 430px) {
+    
+   
+   }
+   
+   
+   
+   @media only screen and (min-width: 431px) and (max-width:820px){
+     
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   @media only screen and (min-width: 821px) and (max-width:2000px) {
+       
+   }
