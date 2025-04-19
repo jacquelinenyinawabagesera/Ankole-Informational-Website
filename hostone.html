@@ -4,22 +4,384 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Document</title>
-  <link rel="stylesheet" href="./hostone.css">
+  <link rel="stylesheet" href="./hostone.css" />
+  <style>
+    /* Reset and base styles */
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    .hostone-image-container {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("./images/host1.jpg");
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 200vh;
+      background-size: cover;
+      position: relative;
+    }
+
+    p {
+      position: absolute;
+      margin-top: -40vh;
+      font-size: 64px;
+      font-weight: 500;
+      line-height: 70px;
+      text-align: center;
+      width: 100vw;
+      left: 0;
+      color: white;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .navigation-bar {
+      position: absolute;
+      top: 85vh;
+      left: 110vh;
+      display: flex;
+      gap: 2vh;
+      background-color: rgb(9, 10, 10);
+      padding: 2.1vh;
+      border-radius: 5vh;
+      margin-left: -50vh;
+      flex-wrap: nowrap;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .navigation-bar a {
+      text-decoration: none;
+      color: white;
+      font-size: 2.1vh;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .reservations-container {
+      background-color: rgb(115, 115, 115);
+      padding: 1.5vh;
+      border-radius: 5vh;
+      margin-top: -0.9vh;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .reservations-container:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .reservations-container a:hover {
+      color: black;
+    }
+
+    #home {
+      background-color: rgb(39, 38, 38);
+      padding: 1.2vh;
+      margin-top: -0.9vh;
+      transition: background-color 0.3s;
+    }
+
+    #home:hover {
+      background-color: rgb(9, 10, 10);
+    }
+
+    .navigation-icons svg {
+      color: white;
+      font-size: 20vh;
+      vertical-align: middle;
+    }
+
+    .clock-icon {
+      position: relative;
+      display: block;
+    }
+
+    .text-wrapper {
+      display: none;
+      position: absolute;
+      color: black;
+      background-color: white;
+      padding: 3vh;
+      width: 15vw;
+      border-radius: 20px;
+      bottom: 230%;
+      z-index: 1;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      user-select: none;
+    }
+
+    .clock-icon:hover .text-wrapper {
+      display: block;
+    }
+
+    .whatsapp-icon {
+      position: absolute;
+      right: 10vh;
+      bottom: 5vh;
+    }
+
+    .fa-whatsapp {
+      color: white;
+      font-size: 7vh;
+    }
+
+    /* =========================
+       Responsive Media Queries
+       ========================= */
+
+    /* Mobile: max-width 430px */
+    @media only screen and (max-width: 430px) {
+      .hostone-image-container {
+        height: 150vh;
+      }
+
+      p {
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: -20vh;
+        padding: 0 10px;
+      }
+
+      .navigation-bar {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95vw;
+        top: auto;
+        left: auto;
+        margin-left: 0;
+        padding: 10px 15px;
+        border-radius: 20px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(9, 10, 10, 0.9);
+      }
+
+      .navigation-bar a {
+        font-size: 14px;
+        padding: 6px 10px;
+        white-space: normal;
+      }
+
+      .navigation-icons svg {
+        font-size: 6vh !important;
+        width: 24px;
+        height: 24px;
+      }
+
+      .reservations-container {
+        padding: 8px 12px;
+        border-radius: 15px;
+        margin-top: 0;
+      }
+
+      #home {
+        padding: 8px 12px;
+        margin-top: 0;
+      }
+
+      .clock-icon:hover .text-wrapper {
+        width: 80vw;
+        bottom: 120%;
+        padding: 2vh;
+        font-size: 14px;
+      }
+
+      .text-wrapper p,
+      .text-wrapper h2 {
+        font-size: 14px;
+        margin: 0.2em 0;
+      }
+    }
+
+    /* Tablet: 431px to 820px */
+    @media only screen and (min-width: 431px) and (max-width: 820px) {
+      .hostone-image-container {
+        height: 180vh;
+      }
+
+      p {
+        font-size: 40px;
+        line-height: 48px;
+        margin-top: -30vh;
+        padding: 0 20px;
+      }
+
+      .navigation-bar {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90vw;
+        top: auto;
+        left: auto;
+        margin-left: 0;
+        padding: 15px 20px;
+        border-radius: 25px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(9, 10, 10, 0.95);
+      }
+
+      .navigation-bar a {
+        font-size: 1.5vh;
+        padding: 8px 15px;
+        white-space: nowrap;
+      }
+
+      .navigation-icons svg {
+        font-size: 10vh !important;
+        width: 30px;
+        height: 30px;
+      }
+
+      .reservations-container {
+        padding: 10px 18px;
+        border-radius: 20px;
+        margin-top: 0;
+      }
+
+      #home {
+        padding: 10px 18px;
+        margin-top: 0;
+      }
+
+      .clock-icon:hover .text-wrapper {
+        width: 40vw;
+        bottom: 180%;
+        padding: 3vh;
+      }
+
+      .text-wrapper p,
+      .text-wrapper h2 {
+        font-size: 16px;
+        margin: 0.3em 0;
+      }
+    }
+
+    /* Desktop: 821px and above */
+    @media only screen and (min-width: 821px) {
+      /* Keep your original styles mostly */
+      .hostone-image-container {
+        height: 200vh;
+      }
+
+      p {
+        font-size: 64px;
+        line-height: 70px;
+        margin-top: -40vh;
+        padding: 0;
+      }
+
+      .navigation-bar {
+        position: absolute;
+        top: 85vh;
+        left: 110vh;
+        margin-left: -50vh;
+        padding: 2.1vh;
+        gap: 2vh;
+        border-radius: 5vh;
+        flex-wrap: nowrap;
+      }
+
+      .navigation-bar a {
+        font-size: 2.1vh;
+        white-space: nowrap;
+      }
+
+      .navigation-icons svg {
+        font-size: 20vh !important;
+      }
+
+      .reservations-container {
+        margin-top: -0.9vh;
+        padding: 1.5vh;
+        border-radius: 5vh;
+      }
+
+      #home {
+        margin-top: -0.9vh;
+        padding: 1.2vh;
+      }
+
+      .clock-icon:hover .text-wrapper {
+        width: 15vw;
+        bottom: 230%;
+        padding: 3vh;
+      }
+
+      .text-wrapper p,
+      .text-wrapper h2 {
+        font-size: 1rem;
+        margin: 0.5em 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="hostone-image-container"></div>
   <div class="navigation-bar">
     <div>
-      <a href="" class="navigation-icons">
-        <p>Live Acoustic Wednesday - <br>       FADHILEE</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      <a href="" class="navigation-icons" aria-label="Live Acoustic Wednesday - FADHILEE">
+        <p>Live Acoustic Wednesday - <br />FADHILEE</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-menu-icon lucide-menu"
+          role="img"
+          aria-hidden="true"
+        >
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
       </a>
     </div>
     <div class="clock-icon">
-      <a href="" class="navigation-icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>
+      <a href="" class="navigation-icons" aria-label="Opening Hours">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-clock3-icon lucide-clock-3"
+          role="img"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16.5 12" />
+        </svg>
       </a>
-      <div class="text-wrapper">
+      <div class="text-wrapper" role="tooltip">
         <p>Opening Hours</p>
         <h2>Kitisuru</h2>
         <p>Mon - Sun</p>

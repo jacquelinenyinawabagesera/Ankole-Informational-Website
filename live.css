@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-position: center;
     overflow: auto;
+    position: sticky;
 }
 .ankole-logo {
     bottom: 30vh;
@@ -299,8 +300,9 @@ line-height: 31px;
   
     .ankole-logo {
       width: 18vh;
-      bottom: 25vh;
+      bottom: 16vh;
       right: 0;
+      left: -5vh;
       overflow: scroll;
     }
   
@@ -336,7 +338,7 @@ line-height: 31px;
     }
   
     .host1-image, .host2-image, .host3-image {
-      width: 40vw;
+      width: 45vw;
       height: 35vh;
       flex-shrink: 0; 
     }
@@ -366,7 +368,7 @@ line-height: 31px;
   
     .branch-text {
       /* position: fixed; */
-      margin-top: -20vh;
+      margin-top: -15vh;
       margin-left: 9vh;
     }
   
