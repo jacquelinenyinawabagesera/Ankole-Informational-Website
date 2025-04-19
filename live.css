@@ -98,7 +98,7 @@ body {
 .branch-text {
     position: absolute;
     margin-top: 45vh;
-    margin-left: 43vh;
+    margin-left: -70vh;
 }
 .menu-heading {
     font-family: 'Typewriter', sans-serif;
