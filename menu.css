@@ -127,11 +127,11 @@ position: absolute;margin-top: 40vh;margin-left: 40vh;
             .branches-container {
                 flex-direction: column;
                 align-items: center;
-                gap: 4vh;
+                /* gap: 4vh; */
             }
             .katisuru-image, .kilimani-image {
                 width: 90vw;
-                height: 40vh;
+                height: 50vh;
                 min-height: 220px;
             }
             .ankole-logo {

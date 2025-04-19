@@ -12,6 +12,9 @@ body {
     background-size: cover;
     position: relative;
   }
+  p{
+    position: absolute;margin-top: -40vh;font-size: 64px;font-weight: 500;line-height: 70px;text-align: center;
+  }
 
   .navigation-bar {
     position: absolute;

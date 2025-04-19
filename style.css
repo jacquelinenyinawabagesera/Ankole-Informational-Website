@@ -161,12 +161,21 @@ body{
     position: fixed;
   }
   .images {
-    width: 102.1vw;
+    width: 150vw;
     height: 102vh;
   }
 }
-@media screen and (min-width: 379) and (max-width: 767px) {
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body{
+    margin: 0;
+    overflow: hidden;
+  }
+  .images {
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh; 
+  }
   .homepageheading-container{
     top: 50vh;
     left: 50%;
@@ -184,8 +193,8 @@ body{
     width: 15vh;
   }
   .navigation-bar {
-    /* position: fixed; */
-   margin-top: -10vh;
+    position: fixed;
+    bottom: 7vh;
     left: 50%;
     transform: translateX(-50%);
     flex-wrap: wrap;
